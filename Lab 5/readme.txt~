@@ -1,0 +1,31 @@
+*** Dataset for Rolling Shutter Motion Deblurring ***
+
+The dataset in this package contains the results from our paper: S. Su and W. Heidrich “Rolling Shutter Motion Deblurring“, IEEE Conference on Computer Vision and Pattern Recognition, 2015. The structure is organized as follows:
+
+
+/results_real/[testset]/[type].png: all the results on real data reported in the paper.
+    - testset: ‘bird’,
+               ’desk’,
+               ’diner’, or
+               ’sofa’.
+    - type:    ‘b’:      original blurred image;
+               ‘ours’:   deblurred image from our method;
+               ‘ours_k’: estimated blur kernel from our method.
+
+/results_synthetic/[testset]/[type].png: all the results on synthetic data reported in the paper.
+    - testset: ‘clock1’,
+               ’clock2’,
+               ’fish1’, or
+               ’fish2’.
+    - type:    ‘b’:      original blurred image;
+               ‘ours’:   deblurred image from our method;
+               ‘ours_k’: estimated blur kernel from our method;
+               ‘gt’:     ground truth sharp image;
+               ‘ours_k’: ground truth blur kernel.
+
+
+For any further questions send me an email!
+
+Copyright (C) 2015. Shuochen Su
+Email: shuochsu@cs.ubc.ca
+ 
